@@ -2,6 +2,19 @@
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
 
+:root {
+	--col-primary: #66e331;
+	--col-secondary: #9031e3;
+
+	--col-light-accent: #b5f19b;
+	--col-accent-2: #31e381;
+	--col-soft-contrast: #9bf1c2;
+	--col-alt-purple: #6f138f;
+	--col-deep-violet: #b531e3;
+	--col-cool-blue: #31a9e3;
+	--col-core-blue: #3149e3;
+}
+
 html {
 	scroll-behavior: smooth;
 }
