@@ -16,10 +16,12 @@
 	</nav>
 
 	<div class="nav-element">
-		<div class="pfp">
-			<div class="pfp-head"></div>
-			<div class="pfp-body"></div>
-		</div>
+		<a href="/players/me" aria-label="Own Profile">
+			<div class="pfp">
+				<div class="pfp-head"></div>
+				<div class="pfp-body"></div>
+			</div>
+		</a>
 	</div>
 </div>
 
