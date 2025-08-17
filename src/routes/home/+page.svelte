@@ -48,12 +48,13 @@
 			{#each currentEvents as event}
 				<div class="curronet-event event">
 					<h2>{event.title}</h2>
+
 					<div class="event-content">
-						<p>When?</p>
+						<p class="content-title">When?</p>
 						<p>{event.time}</p>
-						<p>Where?</p>
+						<p class="content-title">Where?</p>
 						<p>{event.location}</p>
-						<p>Player Count?</p>
+						<p class="content-title">Player Count?</p>
 						<p>{event.players}</p>
 					</div>
 				</div>
@@ -67,6 +68,15 @@
 			{#each pastEvents as event}
 				<div class="past-event event">
 					<h2>{event.title}</h2>
+
+					<div class="event-content past-content">
+						<p class="content-title">When?</p>
+						<p>{event.time}</p>
+						<p class="content-title">Where?</p>
+						<p>{event.location}</p>
+						<p class="content-title">Player Count?</p>
+						<p>{event.players}</p>
+					</div>
 				</div>
 			{/each}
 		</div>
@@ -78,6 +88,8 @@
 		font-size: 2rem;
 		margin: 0;
 		padding: 0;
+
+		margin-bottom: 1rem;
 	}
 
 	h2 {
@@ -103,7 +115,7 @@
 	.event-list {
 		display: flex;
 		flex-direction: column;
-		gap: 1rem;
+		gap: 3rem;
 	}
 
 	.event {
@@ -117,6 +129,10 @@
 		width: 100%;
 	}
 
+	.event-content p {
+		width: fit-content;
+	}
+
 	.event-content {
 		border-top-style: solid;
 		border-top-color: black;
@@ -124,5 +140,21 @@
 
 		margin-top: 0.5rem;
 		padding-top: 0.5rem;
+
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-template-rows: auto auto auto;
+
+		gap: 1rem;
+	}
+
+	.content-title {
+		font-weight: bolder;
+
+		margin-right: 1rem;
+	}
+
+	.past-content {
+		display: none;
 	}
 </style>
